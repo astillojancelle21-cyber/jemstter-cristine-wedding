@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eef3ec;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px 16px;
+    color: #2c352d;
+}
+
+/* Subtle Fern Green Background Pattern */
+body.fern-theme {
+    background:
+        radial-gradient(circle at top left, rgba(79, 121, 66, 0.16), transparent 45%),
+        radial-gradient(circle at bottom right, rgba(47, 79, 47, 0.18), transparent 45%),
+        #eaf0e7;
+}
+
+.invite-wrapper {
+    width: 100%;
+    max-width: 470px;
+}
+
+/* Bongga Card Frame */
+.card {
+    background: linear-gradient(180deg, #ffffff 0%, #fcfdfb 100%);
+    width: 100%;
+    border-radius: 22px;
+    padding: 12px;
+    box-shadow: 0 20px 45px rgba(32, 56, 36, 0.16);
+    border: 1px solid rgba(180, 148, 40, 0.45);
+}
+
+.card-inner-border {
+    border: 1.5px solid #d4af37;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* Rich Fern Green Header */
+.header {
+    background: linear-gradient(155deg, #1f3b26 0%, #3a633c 55%, #4f7942 100%);
+    color: #ffffff;
+    padding: 44px 24px 36px;
+    text-align: center;
+    position: relative;
+    border-bottom: 3px solid #d4af37;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 999px;
+    margin-bottom: 14px;
+    color: #f4e6b2;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.couple-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    color: #fffdf5;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.flourish {
+    margin-top: 14px;
+    font-size: 14px;
+    letter-spacing: 8px;
+    color: #e5c358;
+}
+
+/* Content Sections */
+.content {
+    padding: 32px 26px;
+    text-align: center;
+}
+
+.section h2,
+.admin-card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2f5233;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.65;
+    color: #4a574b;
+}
+
+.ornament-divider {
+    margin: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c8a232;
+    font-size: 13px;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(to right, transparent, rgba(200, 162, 50, 0.55), transparent);
+    margin: 0 12px;
+}
+
+.btn-map {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #3a633c, #4f7942);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #d4af37;
+    box-shadow: 0 6px 15px rgba(58, 99, 60, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-map:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(58, 99, 60, 0.3);
+}
+
+.theme-colors {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.color-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 1.5px #c8a232, 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* RSVP & Form Inputs */
+.rsvp-note {
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 11px;
+    border: 1px solid #c9d6c7;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    background-color: #fbfdfb;
+    color: #2c352d;
+    transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4f7942;
+}
+
+.btn-rsvp {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #25442b, #3e6b3f);
+    color: #ffffff;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-rsvp:hover {
+    opacity: 0.94;
+}
+
+.feedback-msg {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #256029;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #f4f8f3;
+    padding: 16px 20px;
+    font-size: 12px;
+    font-style: italic;
+    color: #4b5e4d;
+    border-top: 1px solid #e1ebe0;
+}
+
+/* Admin Panel Styles */
+.admin-container {
+    max-width: 620px;
+    width: 100%;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.admin-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #25442b;
+}
+
+.admin-card {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(32, 56, 36, 0.1);
+    margin-bottom: 20px;
+    border-top: 4px solid #3a633c;
+    border-left: 1px solid #e3ece2;
+    border-right: 1px solid #e3ece2;
+    border-bottom: 1px solid #e3ece2;
+}
+
+.admin-card label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #364738;
+}
+
+.color-picker-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.color-picker-row input[type="color"] {
+    width: 52px;
+    height: 38px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.rsvp-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-danger {
+    padding: 7px 13px;
+    background-color: #b83b2d;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.total-guests {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #25442b;
+}
+
+.rsvp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.rsvp-table th,
+.rsvp-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ebf0ea;
+}
+
+.rsvp-table th {
+    background-color: #f3f7f2;
+    color: #2f5233;
+}
+.invite-pic {
+    width: 100%;
+    max-width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 14px;
+    border: 3px solid #d4af37;
+    margin-top: 16px;
+}
